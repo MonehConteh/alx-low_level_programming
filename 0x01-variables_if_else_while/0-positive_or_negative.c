@@ -1,20 +1,30 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main -> assign a random number to the variable n each time it is executed and prints out
- * based a condition
- * Return: always 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success/correct)
  */
+
 int main(void)
 {
-if (n > 0)
-	printf("%d is positive\n", n);
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+
 if (n == 0)
-	pritnf("%d is zero\n", n);
-if (n < 0)
 {
-	printf("%d is negative\n", n);
+printf("%i is zero\n", n);
+}
+else if (n < 0)
+{
+printf("%i is negative\n", n);
+}
+else
+{
+printf("%i is positive\n" n);
 }
 return (0);
 }
