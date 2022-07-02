@@ -1,17 +1,16 @@
 #include <stdio.h>
 /**
- * main - Entrey point
- * Description: Alphabet
- * Return = Always 0
+ * main - Entry
+ * Description: Alphabets
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int myNum = 0;
-	while (myNum <= 9)
-	{
-	putchar(myNum + '0');
-	myNum++;
-	}
-	putchar('\n');
-	return (0);
+int i;
+for (i = 48; i <= 57; i++)
+{
+putchar (i);
+}
+putchar('\n');
+return (0);
 }
