@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Prints a random number and states whether 
- * it is positive, negative or zero
+ * main -> assigin a random number to the variable n each time it is executed and print
+ * based a codition
  * Return: always 0 (success)
  */
 int main(void)
