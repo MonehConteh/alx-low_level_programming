@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - prints putchar
- * Return: always 0
+ * main - main block
+ * Description: A program that prints _putchar
+ * Return: always 0 (success)
  */
 int main(void)
 {
