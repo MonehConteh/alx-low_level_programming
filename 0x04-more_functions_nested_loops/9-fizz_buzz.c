@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * fizz_buzz -> printing to 100
+ * print_number -> printing to 100
+ * @n: fizzbuzz integers
  */
-void fizz_buzz(void)
+void print_number(int n)
 {
 	int x;
 
