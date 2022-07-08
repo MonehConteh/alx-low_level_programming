@@ -1,35 +1,38 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * main - checks for a digit (0 to 9)
- * Return: always 0
+ * main - prints the numbers from 1 to 100, folowed by a new line
+ * but for multiples of 3 prints Fizz instead of the number
+ * and for multiples of 5 prints Buzz
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int k;
+	int i;
 
-	for (k = 1; k <= 100; k++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (k % 3 == 0 || k % 5 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-	if (k % 3 == 0)
-			{
 			printf("Fizz");
-			}
-			if (k % 5 == 0)
-			{
-				printf("Buzz");
-			}
-			else
-			{
-				printf("%d", k);
-			}
-			if (k != 100)
-			{
-				putchar(' ');
-			}
 		}
-		putchar('\n');
-		return (0);
+		else if (i % 5 == 0 && i % 3 != 0)
+		{
+			printf("Buzz");
+		}
+		else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (i == 1)
+		{
+			printf("%d", i);
+		}
+		else
+		{
+			printf("%d", i);
+		}
 	}
+	printf("\n");
+	return (0);
 }
-
