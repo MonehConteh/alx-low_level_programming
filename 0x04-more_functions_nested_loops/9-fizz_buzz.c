@@ -1,34 +1,35 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_number -> printing to 100
- * @n: fizzbuzz integers
+ * main - checks for a digit (0 to 9)
+ * Return: always 0
  */
-void print_number(int n)
+int main(void)
 {
-	int x;
+	int k;
 
-	for (x = 1; x <= 100; x++)
+	for (k = 1; k <= 100; k++)
 	{
-		if (x == 100)
+		if (k % 3 == 0 || k % 5 == 0)
 		{
-			printf("Buzz");
-		}
-		else if	(x % 3 == 0 && x % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if	(x % 3 == 0)
-		{
+	if (k % 3 == 0)
+			{
 			printf("Fizz");
+			}
+			if (k % 5 == 0)
+			{
+				printf("Buzz");
+			}
+			else
+			{
+				printf("%d", k);
+			}
+			if (k != 100)
+			{
+				putchar(' ');
+			}
 		}
-		else if (x % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("%d", x);
-		}
+		putchar('\n');
+		return (0);
 	}
-	printf("\n");
 }
+
