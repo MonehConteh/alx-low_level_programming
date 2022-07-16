@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_buffer - c function that prints the content of an
- * inputed number of bytes from a buffer.
- * @b: number of bytes
- * @size: size of the byte
+ * print_buffer - prints buffer
+ * @b: buffer.
+ * @size: size of buffer.
+ * Return: no return.
  */
 void print_buffer(char *b, int size)
 {
