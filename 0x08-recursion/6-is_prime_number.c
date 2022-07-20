@@ -31,5 +31,5 @@ int numb(int n, int i)
  */
 int is_prime_number(int n)
 {
-	return (number(n, 0));
+	return (numb(n, 0));
 }
