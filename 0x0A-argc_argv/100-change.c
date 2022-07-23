@@ -28,6 +28,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+	for (i = 0; i < 5; i++)
+	{
 		if (x >= coin[i])
 		{
 		x = x - coin[i];
@@ -41,6 +43,7 @@ int main(int argc, char *argv[])
 			break;
 			}
 		}
+	}
 		printf("%d\n", change);
 		return (0);
 	}
