@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * *_strdup - pointer to allocated space in memory
- * @str: string
- * Return: pointer
- */
+  * *_strdup - pointer to allocated space in memory
+  * @str: string
+  * Return: pointer.
+  */
+
 char *_strdup(char *str)
 {
 	char *s;
@@ -24,9 +26,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < (size + i); i++)
+	for (i = 0; i < (size + 1); i++)
 	{
-		*(s + i) = *(str + i);
+	*(s + i) = *(str + i);
 	}
 	return (s);
 }
